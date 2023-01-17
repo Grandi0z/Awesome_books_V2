@@ -1,34 +1,31 @@
-import {Book, books, setBooksValue} from './modules/book.js';
-import {loadBooksLocalStorage} from './modules/functions_for_book.js';
-export {loadBooksLocalStorage} from './modules/functions_for_book.js';
-import {laodPages, previousId} from './modules/function_load_pages.js';
-import { DateTime} from "./modules/luxon.js";
+import { Book, setBooksValue } from './modules/book.js';
+import { loadBooksLocalStorage } from './modules/functions_for_book.js';
+import { laodPages, previousId } from './modules/function_load_pages.js';
+import { DateTime } from './modules/luxon.js';
 
-//ADD AND REMOVE BOOKS 
-const bookList = document.getElementById('books_list');
-let bookObj
-const test = document.getElementById('test')
+export { books } from './modules/book.js';
+export { loadBooksLocalStorage } from './modules/functions_for_book.js';
 
-//LOAD PAGES
+// LOAD PAGES
 document.getElementById('nav_list').addEventListener('click', (e) => {
-    laodPages(previousId, e.target.id);
+  laodPages(previousId, e.target.id);
 });
 
-//DATE AND TIME
+// DATE AND TIMEOUT_ERR
 const now = DateTime.now().toLocaleString(DateTime.DATETIME_MED);
-document.getElementById('date').innerText=now
+document.getElementById('date').innerText = now;
 
-//ON START
+// ON START
 window.onload = () => {
-        document.getElementById('form').addEventListener('submit',(e) => {
-            e.preventDefault()
-            const title = document.getElementById('title').value
-            const author = document.getElementById('author').value
-            bookObj = new Book(title,author)
-            bookObj.validateForm()
-    })
-    setBooksValue(JSON.parse(localStorage.getItem('books')))
-    loadBooksLocalStorage()
-}
+  document.getElementById('form').addEventListener('submit', (e) => {
+    e.preventDefault();
+    const title = document.getElementById('titleB').value;
+    const author = document.getElementById('authorB').value;
+    const bookObj = new Book(title, author);
+    bookObj.validateForm();
+  });
+  setBooksValue(JSON.parse(localStorage.getItem('books')));
+  loadBooksLocalStorage();
+};
 
-export {bookList, books, bookObj}
+// export { bookList, bookObj };
