@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/index.css">
+    <title>Awesome books</title>
+</head>
+<body>
+    <main>
+        <header>
+            <nav id="nav_bar">
+                <h1>Awesome books</h1>
+                <ul id="nav_list">
+                    <li><a href="#" class="nav_link" id="list_link" >List</a></li>
+                    <li><a href="#" class="nav_link" id="list_add_new"  >Add new</a></li>
+                    <li><a href="#" class="nav_link" id="list_about" >About</a></li>
+                </ul>  
+            </nav>
+        </header>
+        <div class="date-container">
+            <p id="date"></p>
+        </div>
+        <section class="list_link">
+            <div class="header_books">
+                <h1>All awesome books</h1>
+            </div>
+            <table>
+                <tbody id="books_list">
+                  
+                </tbody>
+            </table>
+        </section id="books_add">
+        <br>
+        <hr class="separator">
+        <section class="list_add_new hidden">
+            <div class="header_books">
+                <h1>Add a new book</h1>
+            </div>
+            <div id="book_add">
+                <form method="post" id="form">
+                    <input type="text" id="titleB" placeholder="Title" required><br><br>
+                    <input type="text" id="authorB" placeholder="Author" required><br><br>
+                    <button type="submit">Add</button>
+                </form>
+            </div>
+        </section>
+        <section class="list_about hidden">
+            <div class="header_books">
+                <h1>Contact information</h1>
+            </div>
+            <div id="contact_us">
+                <p>
+                    Do have any question or you just want to say "Hello"?<br>
+                    You can reach out to us : 
+                </p>
+                <ul>
+                    <li>Our e-mail : <a href="mailto:awasomebooks@gmail.com" class="nav_link">awasomebooks@gmail.com</a> </li>
+                    <li>Our phone number : +243820000000</li>
+                    <li>Our address : street 22, city, country </li>
+                </ul>
+        
+            </div>
+        </section>
+        <footer>
+            <p id="copyright">Copyright</p>
+        </footer>
+    </main>
+    
+
+    <script src="index.js" type="module"></script>
+</body>
+</html>
