@@ -3,9 +3,9 @@ const laodPages = (startPage = 'list_link', destinationPage) => {
   document.querySelector(`.${destinationPage}`).classList.remove('hidden');
 };
 
-let previousId;
+const previousId = { numb: 'list_link' };
 const setId = (id) => {
-  previousId = id;
+  previousId.numb = id;
 };
 
 // Add onblur event Listener to each nav botton

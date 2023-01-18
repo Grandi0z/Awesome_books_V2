@@ -1,18 +1,17 @@
-import { bookList } from './book_features.js';
-import { books, bookObj } from './book.js';
+import { bookList, books, Book } from './book.js';
 
 const loadBooksLocalStorage = () => {
   const container = bookList;
   container.replaceChildren();
-
-  for (let i = 0; i < books.length; i += 1) {
+  const bookObj = new Book();
+  for (let i = 0; i < books.tab.length; i += 1) {
     // creating the tab
     const tableRow = document.createElement('tr');
     const title = document.createElement('td');
     const buttonTd = document.createElement('td');
     const button = document.createElement('button');
     // Create text nodes
-    const rowText = document.createTextNode(`"${books[i].title}" by ${books[i].author}`);
+    const rowText = document.createTextNode(`"${books.tab[i].title}" by ${books.tab[i].author}`);
     const buttonText = document.createTextNode('Remove');
     // Append text to nodes
     title.appendChild(rowText);
@@ -22,7 +21,7 @@ const loadBooksLocalStorage = () => {
     tableRow.appendChild(buttonTd);
 
     buttonTd.setAttribute('class', 'button-row');
-    const bookTitle = books[i].title;
+    const bookTitle = books.tab[i].title;
     button.addEventListener('click', () => {
       bookObj.removeBook(bookTitle);
     });
@@ -30,4 +29,4 @@ const loadBooksLocalStorage = () => {
   }
 };
 
-export { loadBooksLocalStorage };
+export { loadBooksLocalStorage as default };

@@ -1,14 +1,13 @@
 import { Book, setBooksValue } from './modules/book.js';
-import { loadBooksLocalStorage } from './modules/functions_for_book.js';
+import loadBooksLocalStorage from './modules/functions_for_book.js';
 import { laodPages, previousId } from './modules/function_load_pages.js';
-import { DateTime } from './modules/luxon.js';
+import { DateTime } from './node_modules/luxon/src/luxon.js';
 
-export { books } from './modules/book.js';
-export { loadBooksLocalStorage } from './modules/functions_for_book.js';
-
+// ADD AND REMOVE BOOKS
+document.getElementById('books_list').addEventListener('click', () => loadBooksLocalStorage());
 // LOAD PAGES
 document.getElementById('nav_list').addEventListener('click', (e) => {
-  laodPages(previousId, e.target.id);
+  laodPages(previousId.numb, e.target.id);
 });
 
 // DATE AND TIMEOUT_ERR
@@ -23,9 +22,8 @@ window.onload = () => {
     const author = document.getElementById('authorB').value;
     const bookObj = new Book(title, author);
     bookObj.validateForm();
+    loadBooksLocalStorage();
   });
-  setBooksValue(JSON.parse(localStorage.getItem('books')));
+  setBooksValue(JSON.parse(localStorage.getItem('books.tab')));
   loadBooksLocalStorage();
 };
-
-// export { bookList, bookObj };

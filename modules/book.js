@@ -1,11 +1,10 @@
-import { loadBooksLocalStorage } from './book_features.js';
-
-let books = [];
+const books = { tab: [] };
+const bookList = document.getElementById('books_list');
 const setBooksValue = (value) => {
   if (value) {
-    books = value;
+    books.tab = value;
   } else {
-    books = [];
+    books.tab = [];
   }
 };
 class Book {
@@ -15,10 +14,9 @@ class Book {
   }
 
     removeBook = (title) => {
-      const Tempbook = books.filter((book) => book.title !== title);
+      const Tempbook = books.tab.filter((book) => book.title !== title);
       setBooksValue(Tempbook);
-      localStorage.setItem('books', JSON.stringify(books));
-      loadBooksLocalStorage();
+      localStorage.setItem('books.tab', JSON.stringify(books.tab));
     }
 
     validateForm = () => {
@@ -26,15 +24,12 @@ class Book {
         title: this.title,
         author: this.author,
       };
-      books.push(bookObj);
-      localStorage.setItem('books', JSON.stringify(books));
-      loadBooksLocalStorage();
+      books.tab.push(bookObj);
+      localStorage.setItem('books.tab', JSON.stringify(books.tab));
       document.getElementById('form').reset();
     }
 }
 
-const bookObj = new Book();
-
 export {
-  Book, books, setBooksValue, bookObj,
+  Book, books, setBooksValue, bookList,
 };
