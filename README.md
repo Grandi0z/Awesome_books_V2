@@ -1,15 +1,12 @@
 <a name="readme-top"></a>
 
-
 <div align="center">
 
-  <img src="assets/images/logo.png" alt="logo" width="140"  height="auto" />
-  <br/>
-
-  <h3><b>Opti Lion Exhibition 2023</b></h3>
+  <h1><b>Awesome Books V2</b></h1>
 
 </div>
 
+<!-- TABLE OF CONTENTS -->
 
 # 📗 Table of Contents
 
@@ -30,100 +27,94 @@
 - [🤝 Contributing](#contributing)
 - [⭐️ Show your support](#support)
 - [🙏 Acknowledgements](#acknowledgements)
-- [❓ FAQ](#faq)
+- [❓ FAQ (OPTIONAL)](#faq)
 - [📝 License](#license)
 
+<!-- PROJECT DESCRIPTION -->
 
-# 📖 Opti Lion Exhibition 2023 <a name="about-project"></a>
+# 📖 Awesome Books <a name="about-project"></a>
 
-**Opti Lion Exhibition 2023** is my first Capstone project from module 1
+**Awesome Books** is a website to manage books
 
 ## 🛠 Built With <a name="built-with"></a>
 
 ### Tech Stack <a name="tech-stack"></a>
 
-<details>
-  <summary>Client</summary>
-  <ul>
-    <li><a href="https://developer.mozilla.org/en/docs/Web/HTML">HTML</a></li>
-    <li><a href="https://developer.mozilla.org/en/docs/Web/CSS">CSS</a></li>
-    <li><a href="https://developer.mozilla.org/es/docs/Web/JavaScript">Javascript</a></li>
-  </ul>
-</details>
+The following stacks were used
 
 <details>
-  <summary>Server</summary>
   <ul>
-    <li><a href="#">In the next version</a></li>
-  </ul>
-</details>
-
-<details>
-<summary>Database</summary>
-  <ul>
-    <li><a href="#">In the next version</a></li>
+    <li><a href="https://developer.mozilla.org/en-US/docs/Web/HTML">HTML</a></li>
+    <li><a href="https://developer.mozilla.org/en-US/docs/Web/CSS">CSS</a></li>
+    <li><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript">Javascript</a></li>
   </ul>
 </details>
 
 
+<!-- Features -->
 
 ### Key Features <a name="key-features"></a>
 
-- **[Github Flow]**
-- **[Git ignore]**
-- **[css]**
-- **[Bootstrap]**
+Not yet published
+
+- **Add a book**
+- **Remove a book**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-
+<!-- LIVE DEMO -->
 
 ## 🚀 Live Demo <a name="live-demo"></a>
 
-- [View](https://grandi0z.github.io/opti_lion/)
-- [Video] (https://www.loom.com/share/76046389022847beab2047b446c1a5c4)
+Coming soon
+
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
+<!-- GETTING STARTED -->
 
 ## 💻 Getting Started <a name="getting-started"></a>
 
-To get a local copy up and running, follow these steps.
-
 ### Prerequisites
 
-In order to run this project you need to :
-Fork this project
+In order to run this project you need to have a browser and of course a code editor
+
+
 
 ### Setup
 
-Clone this repository to your desired folder:
+Clone this repository to your desired folder, you can also set up HTML, CSS and JavaScript linters, for this you will need node installed. you can follow the steps [here](https://github.com/microverseinc/linters-config/tree/master/html-css) and [here](https://github.com/microverseinc/linters-config/tree/master/javascript) to setup the linters
 
-- cd foldername
-- git clone https://github.com/Grandi0z/Opti_Lion.git
 
 ### Install
 
-Install this project with:
+Once you cloned this project you are done !
 
-Fork this project
 
 ### Usage
 
-To run the project, just fork it.
-
+To run the project, you can simply open the index.html file with your favorite browser.
 
 ### Run tests
 
-To run tests, run the following command:
+If you follow the tutorial above to setup linters then you can run these tests
 
-- Not available yet
+```$
+  npx hint .
+```
+```$
+  npx stylelint "**/*.scss"
+```
+
+or if you use css then run this instead of the latter command above
+
+```$
+  npx stylelint "**/*.{css,scss}"
+```
 
 ### Deployment
 
-To deploy this project :
-
-- 
+You can deploy this project using: GitHub Pages
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -137,67 +128,61 @@ To deploy this project :
 - Twitter: [@Joseph_LSK](https://twitter.com/Joseph_LSK)
 - LinkedIn: [Joeph L Kausi](https://linkedin.com/in/Joeph_l_Kausi)
 
-
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-
+<!-- FUTURE FEATURES -->
 
 ## 🔭 Future Features <a name="future-features"></a>
 
-- [ ] **[Tests]**
-- [ ] **[Fix bugs]**
+> Describe 1 - 3 features you will add to the project.
+
+- [ ] **Awesome Design**
+- [ ] **A table to list the books**
+- [ ] **Use module**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-
+<!-- CONTRIBUTING -->
 
 ## 🤝 Contributing <a name="contributing"></a>
 
 Contributions, issues, and feature requests are welcome!
 
-Feel free to check the [issues page](https://github.com/Grandi0z/Opti_Lion/issues).
+Feel free to check the [issues page](https://github.com/Grandi0z/Awesome_books_V2/issues).
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-
+<!-- SUPPORT -->
 
 ## ⭐️ Show your support <a name="support"></a>
 
-If you like this project give a coffee
+If you like this project you can follow me on github for more.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-
+<!-- ACKNOWLEDGEMENTS -->
 
 ## 🙏 Acknowledgments <a name="acknowledgements"></a>
-I would like to thank `Microverse team` for this big chalange
 
-<details>
-  <summary>Original idea</summary>
-  <ul>
-    <li><a href="https://www.behance.net/adagio07">Cindy Shin in Behance.</a></li>
-  </ul>
-</details>
+thanks to Microverse for providing the necessary resources.
+
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
+<!-- FAQ (optional) -->
 
-## ❓ FAQ <a name="faq"></a>
+## ❓ FAQ (OPTIONAL) <a name="faq"></a>
 
-- **[]**
+- **Are the linters necessary?**
 
-  - []
-
-- **[]**
-
-  - []
+  - It is a good practice to install and use them as they guide you towards best practice, but yes you can do without. 
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-
+<!-- LICENSE -->
 
 ## 📝 License <a name="license"></a>
 
-This project is [MIT](./LICENSE) licensed.
+This project is [MIT](https://choosealicense.com/licenses/mit/) licensed.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
